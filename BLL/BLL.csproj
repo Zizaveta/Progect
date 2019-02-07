@@ -43,13 +43,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AdminBLL\" />
-    <Folder Include="EmployeerBLL\" />
-    <Folder Include="ModeratorBLL\" />
-    <Folder Include="UnauthorizateBLL\" />
-    <Folder Include="WorkerBLL\" />
+    <Folder Include="AdminBLL\Classes\" />
+    <Folder Include="AdminBLL\Interfaces\" />
+    <Folder Include="EmployeerBLL\Classes\" />
+    <Folder Include="EmployeerBLL\Interfaces\" />
+    <Folder Include="ModeratorBLL\Classes\" />
+    <Folder Include="ModeratorBLL\Interfaces\" />
+    <Folder Include="UnauthorizateBLL\Classes\" />
+    <Folder Include="UnauthorizateBLL\Interfaces\" />
+    <Folder Include="WorkerBLL\Classes\" />
+    <Folder Include="WorkerBLL\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{2a3ead0f-2a0b-4be9-8b3e-d0692e6d5825}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{ebeb397f-425a-42d5-8a0f-7a07a02c5cd1}</Project>
       <Name>DAL</Name>
